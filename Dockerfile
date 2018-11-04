@@ -5,3 +5,7 @@ WORKDIR /app
 COPY Gemfile Gemfile.lock /app/
 
 RUN bundle install
+
+COPY . /app
+
+CMD ./app.rb
