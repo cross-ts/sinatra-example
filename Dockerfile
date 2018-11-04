@@ -8,4 +8,6 @@ RUN bundle install
 
 COPY . /app
 
-CMD ./app.rb
+EXPOSE 4567
+
+CMD ./app.rb -o 0.0.0.0
