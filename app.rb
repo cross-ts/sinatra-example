@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "Hello, World"
+%w(sinatra slim).each do |gem|
+  require gem
+end
+
+get '/' do
+  slim :index
+end

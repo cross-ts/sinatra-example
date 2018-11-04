@@ -1,0 +1,16 @@
+html lang="ja"
+  head
+    meta charset="UTF-8"
+
+  body
+    h1
+      | 手を選んでください
+    form method="POST" action="/discision"
+      select name="hand"
+        option value="rock"
+          | グー
+        option value="scissors"
+          | チョキ
+        option value="paper"
+          | パー
+      input type="submit" value="送信"
